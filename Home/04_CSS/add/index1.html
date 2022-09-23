@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .doc {
+           width: 600px; border: solid black 1px; padding-left: 3%;
+           -webkit-border-radius: 0px 40px 0px 40px;
+-moz-border-radius: 0px 40px 0px 40px;
+border-radius: 0px 40px 0px 40px;
+        }
+        a[class='wd']::after {
+            content: url(word.jpg);
+        }
+        a[class='pdf']::after {
+            content: url(pdf.png);
+        }
+        a[class='zip']::after {
+            content: url(zip.gif);
+        }
+    </style>
+</head>
+<body>
+    <h1> Формат файлов</h1>
+    <div class="doc">
+        <p>texttexttexttexttexttexttext ( от англ. <img src="first.png"><a href="#"> document </a> ) -texttexttexttextt Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptate animi odit magnam voluptatibus amet deleniti quis, praesentium reiciendis beatae ea. Ut, nam! Soluta amet praesentium maxime sapiente distinctio necessitatibus! exttexttexttexttexttexttexttexttextdsfdsdv</p>
+        <a href="#" class="wd">Документ MS Word</a>
+    </div>
+    <div class="doc">
+        <p>texttexttexttexttexttexttext ( от англ. <img src="first.png"><a href="#"> PDF </a> ) -texttexttexttextt Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptate animi odit magnam voluptatibus amet deleniti quis, praesentium reiciendis beatae ea. Ut, nam! Soluta amet praesentium maxime sapiente distinctio necessitatibus! exttexttexttexttexttexttexttexttextdsfdsdv</p>
+        <p><a href="#" class="pdf">Документ PDF</a></p>
+    </div>
+    <div class="doc">
+        <p>texttexttexttexttexttexttext ( от англ. <img src="first.png"><a href="#"> .zip </a> ) -texttexttexttextt Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptate animi odit magnam voluptatibus amet deleniti quis, praesentium reiciendis beatae ea. Ut, nam! Soluta amet praesentium maxime sapiente distinctio necessitatibus! exttexttexttexttexttexttexttexttextdsfdsdv</p>
+        <p><a href="#" class="zip">Архив</a></p>
+    </div>
+    <h1>Spisok Dokumentov</h1>
+    <img src="list.jpg"><a href="#" class="list1"> Документ MS Word </a> <br>
+    <img src="list.jpg"><a href="#" class="list2"> Документ PDF </a> <br>
+    <img src="list.jpg"><a href="#" class="list3"> Архив </a> 
+</body>
+</html>

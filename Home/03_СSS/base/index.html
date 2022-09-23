@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <style>
+       
+        div.week {
+            width: 200px; padding: 1px ; background-color:grey; border: solid black 1px; border-radius: 5%; position: relative; cursor: pointer;  display: inline-block;
+            }
+        div.menu2 {
+             display: none
+            }
+        div.menu2 > div {width: 200px; background-color:grey; border: solid black 1px; cursor: pointer; border-radius: 5%; 
+            }
+        div:hover div.menu2 {
+            display: block; position: absolute; 
+         }
+             
+        @media all and (max-width: 1454px) {
+            div.week {
+           background-color:grey; background-color:grey; border: solid black 1px; position: relative; cursor: pointer;  display: block;
+            }
+            div:hover div.menu2 {
+                display: block; position: absolute; left: 100%; top: 1%; 
+             }
+        }
+        
+
+    </style>
+</head>
+<body>
+    
+        <div class="week">Понедельник</div>
+        <div class="week">Вторник
+            <div class='menu2'>
+                <div>завтрак</div>
+                <div>обед</div>
+                <div>ужин</div>
+            </div>
+        </div>
+        <div class="week">Среда</div>
+        <div class="week">Четверг</div>
+        <div class="week">Пятница</div>
+        <div class="week">Суббота</div>
+        <div class="week">Воскресенье</div>
+   
+</body>
+</html>
